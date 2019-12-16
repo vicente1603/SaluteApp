@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/_logo_salute">
+
+                </ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Toque nos ícones para entrar em contato"
+                    android:textAlignment="center"
+                    android:textSize="23sp"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="16dp">
+
+                    <Button
+                        android:id="@+id/btn_whatsapp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_whats"
+                        android:drawableLeft="@drawable/ic_whatsapp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="WhatsApp"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></Button>
+
+                    <Button
+                        android:id="@+id/btn_number1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:drawableLeft="@drawable/ic_phone_iphone_black_24dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="(79) 988535655"
+                        android:textColor="#fff"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></Button>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+
+                    android:paddingBottom="16dp">
+
+                    <Button
+                        android:id="@+id/btn_agendar"
+                        android:layout_width="330dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="AGENDE SUA CONSULTA"
+                        android:textColor="#fff"
+                        android:textStyle="bold"></Button>
+
+                    <Button
+                        android:id="@+id/btn_number2"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:drawableLeft="@drawable/ic_phone_iphone_black_24dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="(79) 998400015"
+                        android:textColor="#fff"
+                        android:textSize="20dp"
+                        android:textStyle="bold">
+
+                    </Button>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_maps"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@drawable/border"
+                    android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                    android:drawableRight="@drawable/ic_directions_car_black_24dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Rua Paulo Henrique Machado Pimentel, 179 \n Salas 02 e 03 - Bairro Inácio Barbosa \n Terréo - Aracaju - Sergipe"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="16dp"
+                    android:textStyle="bold">
+
+                </Button>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="16dp">
+
+                    <ImageButton
+                        android:id="@+id/image_btn_instagram"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_instagram"
+                        android:background="@drawable/border_insta"
+                        android:layout_weight="1"></ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/image_btn_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:src="@drawable/ic_email_black_24dp"></ImageButton>
+
+                    <Button
+                        android:id="@+id/btn_uber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:textColor="#fff"
+                        android:textAllCaps="false"
+                        android:textSize="20dp"
+                        android:background="@drawable/border_uber"
+                        android:text="Uber"></Button>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
